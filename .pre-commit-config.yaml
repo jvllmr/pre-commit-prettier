@@ -1,0 +1,29 @@
+repos:
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v3.19.0
+    hooks:
+      - id: pyupgrade
+        args:
+          - --py310-plus
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: "v0.6.4"
+    hooks:
+      - id: ruff
+        args:
+          - --fix
+      - id: ruff-format
+
+  - repo: https://github.com/jvllmr/pre-commit-prettier
+    rev: v3.4.2
+    hooks:
+      - id: prettier
+        additional_dependencies:
+          - prettier@latest
+          - prettier-plugin-toml@latest
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.6.0
+    hooks:
+      - id: check-yaml
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: check-toml

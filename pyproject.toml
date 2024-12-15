@@ -1,0 +1,12 @@
+[project]
+name = "pre-commit-prettier"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [{ name = "Jan Vollmer", email = "jan@vllmr.dev" }]
+dependencies = ["pre-commit-mirror-maker>=1.10.0", "pre-commit>=4.0.1"]
+requires-python = ">=3.10"
+readme = "README.md"
+license = { text = "MIT" }
+
+[tool.pdm]
+distribution = false
