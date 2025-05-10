@@ -1,9 +1,3 @@
-# archived
-
-prettier made some changes that breaks plugins entirely
-
----
-
 # prettier mirror
 
 Mirror of prettier package for pre-commit.
